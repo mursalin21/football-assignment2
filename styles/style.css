@@ -1,0 +1,522 @@
+/************************************
+    Common Styles and Utilities 
+**********************************/
+
+body{
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+
+/************************************
+        Top Navigation Bar
+**********************************/
+
+.top-navigation{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 39px;
+    align-items: center;
+    background-color: #2D25A0;
+}
+
+.nav-items i{
+    color: white;
+}
+.nav-items a{
+    text-decoration: none;
+    margin-left: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.top-navigation i{
+    display: none;
+}
+
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E02C6D;
+    width: 123px;
+    height: 44px;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+
+}
+.button:hover{
+    transform: scale(1.1);
+    background-color: darkcyan;
+}
+
+.button h3{
+    margin-top: 1px;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: 10px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fa-sign-in-alt{
+    color: white;
+}
+
+/************************************
+        Top Title and Image
+**********************************/
+
+.page-title-image{
+    display: flex;
+    background-color: #2D25A0;
+    align-items: center;
+}
+
+.title-name{
+    color: white;
+    margin-left: 149px;
+    margin-left: 329px;
+    margin-top: 100px;
+    
+}
+.title-name h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    width: 485px;
+    transition: all .5s ease-in-out;
+}
+
+.title-name h1:hover{
+    transform: scale(1.1);
+    filter: blur(0.6px);
+    color: orange;
+}
+
+/* .watch-live-button{
+    display: flex;
+    background-color: #E02C6D;
+    text-decoration: none;
+    color: white;
+    width: 168px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 180px;
+}
+
+.watch-live-button h3{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+} */
+
+.title-name .button{
+    margin-bottom: 180px;
+    padding-right: 13px;
+    padding-left: 10px;
+}
+
+.fa-arrow-right{
+    margin-left: 10px;
+    margin-top: 1px;
+    color: white;
+}
+
+
+.title-image img{
+    width: 556.01px;
+    height: 438px;
+    margin-left: 220px;
+    transition: all 1s ease-in-out;
+}
+
+.title-image img:hover{
+    transform: scale(1.1) rotate(360deg);
+    filter: blur(0.6px);
+}
+
+/************************************
+           Player Profiles
+**********************************/
+
+.player-profiles{
+    /* justify-content: space-around; */
+    align-items: center;
+    display: grid;
+    grid-template-columns: 365px 365px 365px;
+    grid-column-gap: 0px;
+    grid-row-gap: 35px;
+    margin-top: 70px;
+    /* margin-left: 110px; */
+}
+
+.player-profile{
+    width: 300px;
+    height: 450px;
+    padding: 15px;
+    padding-bottom: 45px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.player-profile img{
+    width: 300px;
+    height: 256px;
+}
+
+.player-profile .player-info{
+    width: 300px;
+    height: 256px;
+}
+
+.player-profile .player-info h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.player-profile .player-info p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #6C6C6C;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/************************************
+        Highligts and Image
+**********************************/
+
+.highlights-section{
+    margin-top: 165px;
+    display: flex;
+    align-self: center;
+    /* justify-content: space-around; */
+    
+}
+
+.highlights-section .highlight-details{
+    width: 442px;
+    margin-left: 50px;
+    margin-right: 120px;
+    align-self: center;
+    justify-self: center;
+}
+
+.highlights-section h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0px;
+}
+
+.highlight-details p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #6C6C6C;
+    font-size: 16px;
+    text-align: justify;
+    width: 370px;
+    margin-bottom: 18px;
+}
+
+.highlights-section .button{
+    margin-bottom: 180px;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+.highlights-section img{
+    width: 567px;
+    height: 427px;
+    margin-bottom: 25px;
+    padding: 15px 15px 15px 15px;
+    background-color: darkcyan;
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+
+/************************************
+        Countries and Image
+**********************************/
+
+.country-images{
+    display: flex;
+    justify-content: center;
+}
+
+.countries-description{
+    text-align: center;
+    margin-top: 100px;
+}
+
+.countries-description h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 0px;
+    color: darkcyan;
+}
+
+.countries-description p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #6C6C6C;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.country-images img{
+    width: 250px;
+    height: 250px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 50px;
+    border-radius: 125px;
+    box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.country h3{
+    margin-left: 170px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.countries a{
+    text-align: center;
+    margin-left: 46%;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+
+/********************
+        Footer
+*********************/
+
+.container .football-img img{
+    width: 483px;
+    height: 110px;
+    margin-top: 70px;
+    margin-left: 700px;
+}
+
+.container .platform-icons{
+    margin-left: 907px;
+    font-size: 32px;
+}
+
+.container .platform-icons i{
+    color: grey;
+}
+
+.container p{
+    margin-left: 870px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+
+
+
+/************************************
+      Media Queries and Sizing
+**********************************/
+
+@media only screen and (max-width:688px) {
+
+
+    .body, .top-navigation, .page-title-image, .player-profiles, .highlights-section, .countries, .container{
+        width: 100%;
+    }
+
+    .nav-items a{
+        display: none;
+    }
+    
+    .page-title-image{
+        display: flex;
+        flex-direction: column;
+    }
+    .title-name{
+        margin-left: -90px;
+        width: 40%;
+
+    }
+    .page-title-image .title-name h1{
+        font-size: 36px;
+        width: 250px;
+
+    }
+
+    .page-title-image .title-image img{
+        margin-left: -3px;
+        width: 329px;
+        height: 259.17px;
+    }
+
+    .player-profiles{
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 80px;
+        /* grid-column-gap: 0px;
+        grid-row-gap: 35px;
+        margin-top: 70px; */
+        /* margin-left: 410px; */
+    }
+
+    .highlights-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .highlights-section .highlight-details{
+        margin-left: 80px;
+        width: 350px;
+    }
+    .highlights-section img{
+        width: 320px;
+        height: 250px;
+        margin-left: 30px;
+     }
+
+     .country-images{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .countries a{
+        margin-left: 38%;
+    }
+
+    .container .football-img img{
+        width: 300px;
+        height: 110px;
+        margin-top: 70px;
+        margin-left: 40px;
+    }
+    
+    .container .platform-icons{
+        margin-left: 145px;
+        font-size: 32px;
+    }
+    
+    .container .platform-icons i{
+        color: grey;
+    }
+    
+    .container p{
+        margin-left: 110px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+}
+/* tablet devices */
+
+@media only screen and (min-width:688px) and (max-width: 992px) {
+    
+    /* .body, .top-navigation, .page-title-image, .player-profiles, .highlights-section, .countries, .container{
+        width: 100%;
+    } */
+
+    .page-title-image{
+        display: flex;
+    }
+    .title-name{
+        margin-left: 100px;
+        width: 40%;
+
+    }
+    .page-title-image .title-name h1{
+        font-size: 36px;
+        width: 250px;
+
+    }
+
+    .page-title-image .title-image img{
+        margin-left: -3px;
+        width: 329px;
+        height: 259.17px;
+    }
+
+    .player-profiles{
+        /* justify-content: space-around; */
+        /* align-items: center; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 10px;
+        /* grid-column-gap: 0px;
+        grid-row-gap: 35px;
+        margin-top: 70px; */
+        /* margin-left: 410px; */
+    }
+
+    .highlights-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .highlights-section .highlight-details{
+        margin-left: 100px;
+        width: 350px;
+    }
+    .highlights-section img{
+        width: 320px;
+        height: 250px;
+        margin-left: 100px;
+     }
+
+     .country-images{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .countries a{
+        margin-left: 48;
+    }
+
+    .container .football-img img{
+        width: 400px;
+        height: 200px;
+        margin-top: 70px;
+        margin-left: 150px;
+    }
+    
+    .container .platform-icons{
+        margin-left: 300px;
+        font-size: 32px;
+    }
+    
+    .container .platform-icons i{
+        color: grey;
+    }
+    
+    .container p{
+        margin-left: 260px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+} 
